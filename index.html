@@ -7,6 +7,12 @@
     <title>Admission Cal</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <style>
+        .border-me {
+            border: 0.1rem solid black;
+            margin: 1rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,44 +20,111 @@
         <div class="row">
             <div class="col-md-12">
                 <center>
-                    <h1 class="text-center">Admission Cal</h1><h5><a href="https://forms.gle/11tW3vckaTwg4hKD6">รีวิว</a></h5>
+                    <h1 class="text-center">Admission Cal</h1>
+                    <h5><a href="https://forms.gle/11tW3vckaTwg4hKD6">รีวิว</a></h5>
                 </center>
                 <form method="post">
                     <div class="form-group">
-                        <label>GPAX</label>
                         <div class="row">
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" id="gpax-score" name="gpax-score"
-                                    placeholder="เกรดเฉลี่ย (GPAX)" max="4" step="0.01">
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>GPAX</label><br>
+                                    <input name="boxs" type="checkbox" value="gpax">
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" id="gpax-percent" name="gpax-percent"
-                                    placeholder="เปอร์เซ็นที่มหาลัยกำหนด" max="100" step="1">
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>GAT</label><br>
+                                    <input name="boxs" type="checkbox" value="gat">
+                                </div>
                             </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>PAT1</label><br>
+                                    <input name="boxs" type="checkbox" value="pat1">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>PAT2</label><br>
+                                    <input name="boxs" type="checkbox" value="pat2">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>PAT3</label><br>
+                                    <input name="boxs" type="checkbox" value="pat3">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>PAT4</label><br>
+                                    <input name="boxs" type="checkbox" value="pat4">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>PAT5</label><br>
+                                    <input name="boxs" type="checkbox" value="pat5">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>PAT6</label><br>
+                                    <input name="boxs" type="checkbox" value="pat6">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>PAT7</label><br>
+                                    <input name="boxs" type="checkbox" value="pat7">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (คณิตศาสตร์ 1)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun1">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (คณิตศาสตร์ 2)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun2">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (วิทยาศาสตร์)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun3">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (ฟิสิกส์)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun4">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (เคมี)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun5">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (ชีววิทยา)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun6">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (ไทย)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun7">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (สังคม)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun8">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style="text-align: center;">
+                                <div class="border-me"><label>9 วิชาสามัญ (อังกฤษ)</label><br>
+                                    <input name="boxs" type="checkbox" value="samun9">
+                                </div>
+                            </div>
+                            <hr>
+                            <input type="button" onclick="alert(getCheckedCheckboxesFor('boxs'));" value="Get Values" />
                         </div>
-
-                        <label>GAT</label>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" id="gat-score" name="gat-score"
-                                    placeholder="คะแนน GAT (300)" max="300" step="1">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" id="gat-percent" name="gat-percent"
-                                    placeholder="เปอร์เซ็นที่มหาลัยกำหนด" max="100" step="1">
-                            </div>
-                        </div>
-                        <div id="loop-pat"></div>
-                        <div id="loop-samun"></div>
-                    </div>
                 </form>
-                <hr>
-                <button id="result-button" style="margin-top: 0.1rem;" class="btn btn-primary">คำนวณ</button>
             </div>
         </div>
 
     </div>
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
