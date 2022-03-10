@@ -46,8 +46,7 @@ const calculate = () => {
         let samun_percent = Number(document.getElementById(`samun${i}-percent`).value)*3;
         a_result += (samun_score * samun_percent);
     }
-    //result.innerHTML = a_result;
-    alert(Math.ceil(a_result));
+    alert(`${Intl.NumberFormat().format(Math.ceil(a_result))} | 30,000 คะแนน`);
 }
 
 const loadAll = () => {
