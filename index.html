@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Cal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Admission Cal</h1>
+                <form method="post">
+                    <div class="form-group">
+                        <label>GPAX</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="gpax-score" name="gpax-score"
+                                    placeholder="เกรดเฉลี่ย (GPAX)" max="4" step="0.01">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="gpax-percent" name="gpax-percent"
+                                    placeholder="เปอร์เซ็นที่มหาลัยกำหนด" max="100" step="1">
+                            </div>
+                        </div>
+
+                        <label>GAT</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="gat-score" name="gat-score"
+                                    placeholder="คะแนน GAT (300)" max="300" step="1">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="gat-percent" name="gat-percent"
+                                    placeholder="เปอร์เซ็นที่มหาลัยกำหนด" max="100" step="1">
+                            </div>
+                        </div>
+                        <div id="loop-pat"></div>
+                        <div id="loop-samun"></div>
+                    </div>
+                </form>
+                <button id="result-button" class="btn btn-primary">คำนวณ</button>
+                <!-- <h1 id="result"></h1> -->
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
