@@ -18,7 +18,7 @@ const loadItem = () => {
     let output = []
     for (let i = 0; i < 18; i++) {
         if (dataArray.includes(id[i])) {
-            output += `<label>${name[i]}</label><div class="row"><div class="col-md-6"><input type="number" class="form-control" id=${score[i]} name=${score[i]} placeholder="คะแนน ${name[i]}" max="${max[i]}" step="${step[i]}"></div><div class="col-md-6"><input type="number" class="form-control" id=${percent[i]} name=${percent[i]} placeholder="เปอร์เซ็นที่มหาลัยกำหนด" max="100" step="1"></div></div>`;
+            output += `<label style="margin-top:1rem;">${name[i]}</label><div class="row"><div class="col-md-6"><input type="number" class="form-control" id=${score[i]} name=${score[i]} placeholder="คะแนน ${name[i]}" max="${max[i]}" step="${step[i]}"></div><div class="col-md-6"><input type="number" class="form-control" id=${percent[i]} name=${percent[i]} placeholder="เปอร์เซ็นที่มหาลัยกำหนด" max="100" step="1"></div></div>`;
         }
     }
     loadData.innerHTML = output;
