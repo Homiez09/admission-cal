@@ -4,7 +4,13 @@ var url_string = window.location;
 var url = new URL(url_string);
 var data = url.searchParams.get("data");
 var dataArray = data.split(',');
+console.log(data);
 console.log(dataArray);
+
+if (data == "") {
+    alert("กรุณาเลือกวิชาที่ต้องการคำนวณ");
+    window.location.href = "index.html"
+}
 
 const step = [0.01, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,]
 const max = [4, 300, 300, 300, 300, 300, 300, 300, 300, 100, 100, 100, 100, 100, 100, 100, 100, 100]
